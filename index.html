@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Bruno Carvalho Feitosa" />
+    <meta name="language" content="pt-BR" />
+    <meta name="country" content="BRA" />
+    <meta name="currency" content="R$" />
+    <meta name="description" content="E-Commerce loja Osklen, compre conjuntos de roupas, camisas, calças, sapatos e muito mais" />
+    <meta name="keywords" content="E-Commerce, Loja, Osklen, Compre, Conjunto de Roupas, Camisas, Calças, Sapatos" />
+    <link rel="icon" href="./src/assets/images/fav.png" />
+    <link rel="stylesheet" href="./src/css/styleGrids.css" />
+    <link rel="stylesheet" href="./src/css/styleDesktop.css" />    
+    <link rel="stylesheet" href="./src/css/styleMobile.css" />
+    <link rel="stylesheet" href="./src/css/styleSlider.css" />
+    <link rel="stylesheet" href="src/css/styleCountProduct.css" />
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <title>Osklen | E-Commerce</title>
+</head>
+
+<body>
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Top Menu -->
+        <div class="os-topMenu">
+            <div class="grid">
+                <div class="grid-item">
+                    <p>1ª compra com desconto</p>
+                </div>
+                <div class="grid-item">
+                    <p>Frete grátis a partir de R$299,99</p>
+                </div>
+                <div class="grid-item">
+                    <p>Parcelamento em até 6x</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Side Menu -->
+        <div class="os-sideMenu">
+
+            <div class="grid">
+                <div class="grid-item">
+                    <!-- Brand -->
+                    <div class="brand">
+                        <h1>Osklen</h1>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <!-- Options Side Menu -->
+                    <ul class="options">
+                        <li>Zodiac</li>
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>Shoes</li>
+                        <li class="active">Outlet</li>
+                        <li>Inside</li>
+                    </ul>
+                </div>
+
+                <div class="grid-item">
+                    <ul class="actions">
+                        <li><img src="./src/assets/icons/iconSearch.png" class="iconMenu" /></li>
+                        <li><img src="./src/assets/icons/iconMessage.png" class="iconMenu" /></li>
+                        <li><img src="./src/assets/icons/iconLocalization.png" class="iconMenu" /></li>
+                        <li><img src="./src/assets/icons/iconUser.png" class="iconMenu" /></li>
+                        <li><img src="./src/assets/icons/iconBag.png" id="bag" class="iconMenu" /></li>
+                        <li><img src="./src/assets/icons/iconBrasil.png" id="bag" class="iconFlag" /></li>
+                        <li><img src="./src/assets/icons/iconJapao.png" id="bag" class="iconFlag" /></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="os-Cart">
+            <img src="src/assets/icons/iconClose.png" id="close" />
+            <p>Sua sacola está vazia...</p>
+        </div>
+
+        <!-- Slider -->
+        <div class="os-Slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="src/assets/images/slider01.jpg" class="slider img-fluid" /></div>
+                    <div class="swiper-slide"><img src="src/assets/images/slider02.jpg" class="slider img-fluid" /></div>
+                    <div class="swiper-slide"><img src="src/assets/images/slider03.jpg" class="slider img-fluid" /></div>
+                    <div class="swiper-slide"><img src="src/assets/images/slider04.jpg" class="slider img-fluid" /></div>
+                </div>
+                <!-- Pagination Slide -->
+                <div class="swiper-pagination"></div>
+                <!-- Next Slide -->
+                <div class="swiper-button-next"><img src="src/assets/icons/iconArowRight.png" /></div>
+                <!-- Previous Slide -->
+                <div class="swiper-button-prev"><img src="src/assets/icons/iconArowLeft.png" /></div>
+            </div>
+        </div>
+
+        <!-- Gallery Categories -->
+        <div class="os-Categories">
+            <!-- Men -->
+            <div class="categorie-men">
+                <div class="overlay">
+                    <div class="content-text">
+                        <p class="title-shop-men">[Shop Men]</p>
+                        <p class="text-shop-men">Conheça as novas propostas e estampas da coleção inverno.</p>
+                    </div>
+                </div>
+                <img src="./src/assets/images/gallery01.jpg" />
+            </div>
+
+            <!-- Women -->
+            <div class="categorie-women">
+                <div class="overlay">
+                    <div class="content-text">
+                        <p class="title-shop-women">[Shop Women]</p>
+                        <p class="text-shop-women">Modelagens, texturas e estampas inspiradas em elementos da natureza.</p>
+                    </div>
+                </div>
+                <img src="./src/assets/images/gallery02.jpg" />
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="os-About">
+            <div class="os-containerAbout">
+                <div class="grid">
+                    <div class="grid-item">
+                        <p class="text-timeline">Osklen</p>
+                        <p class="text-timeline">Sustentability</p>
+                        <p class="text-timeline">Timeline</p>
+                    </div>
+                    <div class="grid-item">
+                        <p class="text-timeline-description">
+                            Quando pouco ainda se falava de sustentabilidade na moda brasileira, fomos pioneiros ao lançar, em 1998, a primeira t-shirt feita em algodão orgânico. Desde então, aumentamos cada vez mais o uso de matérias-primas e processos sustentáveis na produção
+                            de nossas coleções.
+                        </p>
+
+                        <p class="text-timeline-description">
+                            Ao longo dos últimos 10 anos, estimamos a marca recorde de mais de 1 milhão e meio de garrafas PET recicladas para criação de peças e-fabrics. Toneladas de dejetos que deixaram de ser lançados nos oceanos, protegendo espécies ameaçadas pelos resíduos
+                            de plástico.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1998 -->
+        <div class="os-1998">
+            <div class="grid">
+                <!-- Year -->
+                <div class="grid-item">
+                    <p class="text-1998">1998</p>
+                </div>
+
+                <!-- Pioner -->
+                <div class="grid-item">
+                    <h2>Pioneirismo na sustentabilidade</h2>
+                    <p class="text-pioner">Oskar Metsavaht lança os fundamentos do desenvolvimento sustentável para a Osklen e assim implementa estratégias que dão início aos projetos socioambientais na moda.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products -->
+        <div class="os-Products">
+            <!-- Products Padding -->
+            <div class="content-Products">
+
+                <!-- Grid Product -->
+                <div class="grid-products">
+                    <!-- Product Item -->
+                    <div class="grid-products-item">
+                        <div class="content-item">
+                            <img src="./src/assets/images/product01.jpg" />
+                            <p class="name-product">Brusinha</p>
+                            <p class="price-product">R$599,00</p>
+                            <!-- More Details -->
+                            <div class="more-details">
+                                <!-- Title Sizes -->
+                                <p class="text-sizes">Tamanhos</p>
+                                <!-- Sizes -->
+                                <ul class="sizes">
+                                    <li>P</li>
+                                    <li>M</li>
+                                    <li>G</li>
+                                    <li>GG</li>
+                                </ul>
+                                <!-- Choose quantity -->
+                                <div class="quantity">
+                                    <input type="number" class="nmb-quantity" min="1" value="1" />
+                                </div>
+                                <!-- Button Buy -->
+                                <button type="submit" name="btnBuy" class="btnBuy">Adicionar à sacola</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Item -->
+                    <div class="grid-products-item">
+                        <div class="content-item">
+                            <img src="./src/assets/images/product02.jpg" />
+                            <p class="name-product">Brusinha</p>
+                            <p class="price-product">R$599,00</p>
+                            <!-- More Details -->
+                            <div class="more-details">
+                                <!-- Title Sizes -->
+                                <p class="text-sizes">Tamanhos</p>
+                                <!-- Sizes -->
+                                <ul class="sizes">
+                                    <li>P</li>
+                                    <li>M</li>
+                                    <li>G</li>
+                                    <li>GG</li>
+                                </ul>
+                                <!-- Choose quantity -->
+                                <div class="quantity">
+                                    <input type="number" class="nmb-quantity" min="1" value="1" />
+                                </div>
+                                <!-- Button Buy -->
+                                <button type="submit" name="btnBuy" class="btnBuy">Adicionar à sacola</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Item -->
+                    <div class="grid-products-item">
+                        <div class="content-item">
+                            <img src="./src/assets/images/product03.jpg" />
+                            <p class="name-product">Brusinha</p>
+                            <p class="price-product">R$599,00</p>
+                            <!-- More Details -->
+                            <div class="more-details">
+                                <!-- Title Sizes -->
+                                <p class="text-sizes">Tamanhos</p>
+                                <!-- Sizes -->
+                                <ul class="sizes">
+                                    <li>P</li>
+                                    <li>M</li>
+                                    <li>G</li>
+                                    <li>GG</li>
+                                </ul>
+                                <!-- Choose quantity -->
+                                <div class="quantity">
+                                    <input type="number" class="nmb-quantity" min="1" value="1" />
+                                </div>
+                                <!-- Button Buy -->
+                                <button type="submit" name="btnBuy" class="btnBuy">Adicionar à sacola</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Medias -->
+        <div class="os-socialMedias">
+            <div class="medias">
+                <ul>
+                    <li>
+                        <a href="https://instagram.com/osklen/" target="_blank"><i class="ion-social-instagram" title="Instagram"></a></i>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com/osklen/" target="_blank"><i class="ion-social-facebook" title="Facebook"></a></i>
+                    </li>
+                    <li>
+                        <a href="https://vimeo.com/osklen/" target="_blank"><i class="ion-social-vimeo" title="Vimeo"></a></i>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com/user/osklen/" target="_blank"><i class="ion-social-youtube" title="YouTube"></a></i>
+                    </li>
+                    <li>
+                        <a href="https://pinterest.com/osklen/" target="_blank"><i class="ion-social-pinterest" title="Pinterest"></a></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="os-Footer">
+            <!-- Grid Footer -->
+            <div class="grid-footer">
+                <!-- Grid Item Footer -->
+                <div class="grid-footer-item">
+                    <ul>
+                        <li class="title-footer">Osklen</li>
+                        <li>Lojas</li>
+                        <li>Neo Community</li>
+                        <li>Revendedores</li>
+                        <li>Sobre Franquia e Multimarca</li>
+                        <li>Trabalhe Conosco</li>
+                    </ul>
+                </div>
+                <!-- Grid Item Footer -->
+                <div class="grid-footer-item">
+                    <ul>
+                        <li class="title-footer">Minha Conta</li>
+                        <li>Meus Pedidos</li>
+                        <li>Meus Dados</li>
+                        <li>Políticas</li>
+                        <li>Privacidade</li>
+                        <li>Proteção de Dados</li>
+                    </ul>
+                </div>
+                <!-- Grid Item Footer -->
+                <div class="grid-footer-item">
+                    <ul>
+                        <li class="title-footer">Políticas</li>
+                        <li>Prazo de Entrega</li>
+                        <li>Trocas e Devoluções</li>
+                        <li>Formas de Pagamento</li>
+                        <li>Termos e Condições</li>
+                        <li>Privicidade e Segurança</li>
+                    </ul>
+                </div>
+                <!-- Grid Item Footer -->
+                <div class="grid-footer-item">
+                    <ul class="news">
+                        <!-- Newsletter -->
+                        <form>
+                            <li class="title-footer">Assine a Newsletter</li>
+                            <li><input type="email" class="txt-Newsletter" placeholder="e-mail" required="" /></li>
+                            <li>Qual conteúdo gostaria de receber?</li>
+                            <li>
+
+                            <!-- Inputs -->
+                            <input type="checkbox" name="newsletter" value="men" class="gender-Newsletter" /><label for="men" class="lblGender-Newsletter"> men</label>
+                            <input type="checkbox" name="newsletter" value="women" class="gender-Newsletter" /><label for="women" class="lblGender-Newsletter"> women</label>
+                            <input type="checkbox" name="newsletter" value="menwomen" class="gender-Newsletter" /><label for="menwomen" class="lblGender-Newsletter"> men + women</label><br />
+                            <input type="submit" name="btnRegisterNews" value="Enviar" class="btnRegisterNews" />
+                        </form>
+                    </ul>
+                </div>
+            </div>
+
+                <!-- Copyright -->
+                <div class="os-Copyright">
+                    <p class="copyright">Terras de Aventura Ind. e Com.de Art. Esp. S/A CNPJ 35.943.604/0001-56 Rua Aristides Lobo, 150. Rio Comprido. RJ Brasil. CEP 20250-450</p>
+                </div>
+
+                <!-- Developer -->
+                <div class="os-Developer">
+                    <p class="developer"><a href="https://www.linkedin.com/in/bruno-carvalho-feitosa" target="_blank">Desenvolved by Bruno Carvalho Feitosa</a></p>
+                </div>
+            </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <img src="src/assets/icons/iconClose.png" id="close-modal" />
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+            <h2><strong><p id="welcome">Bem-Vindo</p></strong></h2>
+            <p>Cadastre-se para receber conteúdo exclusivo e ganhe 10% off na primeira compra, além de receber frete gratuito.</p>
+
+            <form method="POST">
+                <input type="text" placeholder="Seu e-mail" required />
+                <strong><p id="cupom">Você receberá o cupom de desconto no e-mail cadastrado acima</p></strong>
+                <button type="submit" id="btnRegister">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="src/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="src/js/swiper.min.js"></script>
+    <script type="text/javascript" src="src/js/modal.js"></script>
+    <script type="text/javascript" src="src/js/slider.js"></script>
+    <script type="text/javascript" src="src/js/jquery.nice-number.min.js"></script>
+    <script type="text/javascript" src="src/js/hoverCart.js"></script>
+    <script>
+        $(function() {
+            $('input[type="number"]').niceNumber();
+        });
+    </script>
+</body>
+
+</html>

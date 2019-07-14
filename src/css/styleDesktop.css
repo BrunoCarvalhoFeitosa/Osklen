@@ -1,0 +1,758 @@
+/* Importation of Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+/* Global Formatation */
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* Top Menu */
+.container .os-topMenu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    background: #F9F9F9;
+    z-index: 999;
+}
+
+/* Top Menu - Tipography */
+.container .os-topMenu .grid .grid-item p {
+    margin: 7px 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #777;
+}
+
+/* Side Menu */
+.container .os-sideMenu {
+    position: fixed;
+    top: 30px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background: #FFF;
+    z-index: 999;
+}
+
+/* Side Menu - Brand */
+.container .os-sideMenu .brand {
+    position: relative;
+    top: -8px;
+    left: 70px;
+}
+
+/* Side Menu - Brand Decoration */
+.container .os-sideMenu .brand a {
+    text-decoration: none;
+}
+
+/* Side Menu - Brand Tipography */
+.container .os-sideMenu .brand h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    transition: 0.5s;
+}
+
+/* Side Menu - Options Menu Position */
+.container .os-sideMenu .options {
+    margin-top: 0px;
+    display: flex;
+    float: left;
+    list-style: none;
+}
+
+/* Side Menu - Options Menu Tipography */
+.container .os-sideMenu .options li {
+    margin: 8px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #AAA;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+/* Side Menu - Options Menu Tipography Animation */
+.container .os-sideMenu .options li:hover {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+/* Side Menu - Option Menu Active */
+.container .os-sideMenu .options .active {
+    color: #000;
+}
+
+/* Side Menu - Menu Ícons */
+.container .os-sideMenu .actions {
+    display: flex;
+    margin-top: 4px;
+    list-style: none;
+}
+
+/* Side Menu - Space between ícons */
+.container .os-sideMenu .actions li {
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Side Menu - Size Ícons */
+.container .os-sideMenu .actions .iconMenu {
+    margin-top: 3px;
+    width: 18px;
+}
+
+/* Side Menu - Size Flags */
+.container .os-sideMenu .actions .iconFlag {
+    width: 25px;
+}
+
+/* Cart */
+.container .os-Cart {
+    position: fixed;
+    top: 70px;
+    right: 0px;
+    width: 325px;
+    min-height: 50px;
+    background: #FFF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    display: none;
+    transition: 1.5s;
+    z-index: 999;
+}
+
+/* Cart - Ícon Close */
+.container .os-Cart #close {
+    display: none;
+    float: right;
+    margin: 15px;
+    width: 25px;
+}
+
+/* Cart - Text */
+.container .os-Cart p {
+    float: right;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+/* Slider */
+.container .os-Slider {
+    margin: 0px;
+    margin-top: 80px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+
+/* Slider - Swiper Container */
+.container .os-Slider .swiper-container {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: grab;
+}
+
+/* Slider - Swiper Slide */
+.container .os-Slider .swiper-container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* Slider - Size Images */
+.slider img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Slider - Pagination */
+.swiper-pagination {
+    position: absolute;
+    bottom: 30px!important;
+}
+
+/* Slider - Previews and Next Buttons */
+.swiper-button-prev, .swiper-button-next {
+    outline: none;
+    border: none;
+}
+
+/* Gallery Categories */
+.container .os-Categories {
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+
+/* Galley Men */
+.container .os-Categories .categorie-men {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+/* Gallery Men - Width Image */
+.container .os-Categories .categorie-men img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Gallery Women */
+.container .os-Categories .categorie-women {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+/* Gallery Women - Width Image */
+.container .os-Categories .categorie-women img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Overlay Categories */
+.overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.685);
+    transition: 0.7s;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Categorie Men - Overlay Position Text Men */
+.container .os-Categories .categorie-men .overlay .content-text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Categorie Men - Overlay Tipography Title */
+.container .os-Categories .categorie-men .overlay .title-shop-men {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline #000;
+    text-align: center;
+    color: #000;
+}
+
+/* Categorie Men - Overlay Tipography Text */
+.container .os-Categories .categorie-men .overlay .text-shop-men {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+
+/* Categorie Women - Overlay Position Text Women */
+.container .os-Categories .categorie-women .overlay .content-text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Categorie Women - Overlay Tipography Title */
+.container .os-Categories .categorie-women .overlay .title-shop-women {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline #000;
+    text-align: center!important;
+    color: #000;
+}
+
+/* Categorie Women - Overlay Tipography Text Women */
+.container .os-Categories .categorie-women .overlay .text-shop-women {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: center!important;
+}
+
+/* Animation Overlay Men */
+.container .os-Categories .categorie-men:hover .overlay {
+    opacity: 1;
+}
+
+/* Animation Overlay Women */
+.container .os-Categories .categorie-women:hover .overlay {
+    opacity: 1;
+}
+
+/* About */
+.container .os-About {
+    width: 100%;
+    height: auto;
+    background: #FFF;
+}
+
+/* About - Title Timeline */
+.container .os-About .os-containerAbout .text-timeline {
+    position: relative;
+    top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 44px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #273D25;
+    line-height: 10px;
+}
+
+/* About - Text Timeline */
+.container .os-About .os-containerAbout .text-timeline-description {
+    position: relative;
+    top: 20px;
+    left: -60px;
+    margin: 40px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 17px;
+    text-indent: 45px;
+    text-align: justify;
+    color: #666;
+    width: 600px;
+    line-height: 30px;
+}
+
+/* About - 1998 */
+.container .os-1998 {
+    width: 100%;
+    height: auto;
+    padding-bottom: 65px;
+    background: #FFF;
+}
+
+/* About - Title 1998 */
+.container .os-1998 .text-1998 {
+    position: relative;
+    left: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 135px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #273D25;
+}
+
+/* About - Title Text 1998 */
+.container .os-1998 h2 {
+    position: relative;
+    top: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #273D25;
+}
+
+/* About - Text 1998 */
+.container .os-1998 .text-pioner {
+    margin-top: 60px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    color: #666;
+    width: 600px;
+    line-height: 30px;
+}
+
+/* Products */
+.container .os-Products {
+    width: 100%;
+    height: auto;
+    padding-bottom: 65px;
+    background: #FFF;
+    overflow: hidden;
+}
+
+/* Products - Content */
+.container .os-Products .content-Products {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Products - Border */
+.container .os-Products .content-Products .content-item {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #C5C5C5;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+/* Products - Price */
+.container .os-Products .content-Products .content-item .name-product, .price-product {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #999;
+}
+
+/* Produts - More Details */
+.container .os-Products .content-Products .grid-products .grid-products-item .more-details {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.85);
+    transition: 0.5s;
+}
+
+/* Products - More Details Title Sizes */
+.container .os-Products .content-Products .grid-products .grid-products-item .more-details .text-sizes {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #AAA;
+}
+
+/* Products - More Details Position Sizes */
+.container .os-Products .content-Products .more-details ul {
+    display: flex;
+    margin: -10px -45px;
+    list-style: none;
+}
+
+/* Products - More Details Box Sizes */
+.container .os-Products .content-Products .more-details ul li {
+    margin: 5px;
+    width: 27px;
+    height: 20px;
+    border: 1px solid #AAA;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #AAA;
+    cursor: pointer;
+}
+
+/* Products - More Details Box Sizes Animation */
+.container .os-Products .content-Products .more-details ul li:hover {
+    background: #000;
+}
+
+/* Products - More Details Position Count Quantity */
+.container .os-Products .content-Products .grid-products .grid-products-item .more-details .quantity {
+    position: absolute;
+    top: 34px;
+    right: 15px;
+}
+
+/* Products - More Details Button Buy */
+.container .os-Products .content-Products .more-details .btnBuy {
+    margin-left: -5px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    border: none;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFF;
+    cursor: pointer;
+}
+
+/* Products - More Details Opacity Animation */
+.container .os-Products .content-Products .grid-products-item:hover .more-details {
+    display: block;
+    transform: translateY(-5px);
+}
+
+/* Social Medias */
+.container .os-socialMedias {
+    width: 100%;
+    height: 50px;
+    background: #FFF;
+}
+
+/* Social Medias Position Center */
+.container .os-socialMedias .medias {
+    position: absolute;
+    margin-top: 35px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Social Medias - Position Icons */
+.container .os-socialMedias .medias ul {
+    display: flex;
+    margin-top: 0px;
+    list-style: none;
+}
+
+/* Social Medias Color */
+.container .os-socialMedias .medias ul li i {
+    margin: 18px;
+    font-size: 32px;
+    color: #BBB;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Social Medias Color Animation */
+.container .os-socialMedias .medias ul li i:hover {
+    color: #000;
+}
+
+/* Footer */
+.container .os-Footer {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    background: #F5F5F5;
+}
+
+/* Footer - Circles Itens */
+.container .os-Footer ul {
+    margin-top: 50px;
+    list-style: none;
+}
+
+/* Footer Titles */
+.container .os-Footer ul .title-footer {
+    margin: 8px 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Footer - Texts */
+.container .os-Footer ul li {
+    margin-top: 4px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    color: #999;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+/* Footer - Newsletter Textbox */
+.container .os-Footer .news li .txt-Newsletter {
+    width: 100%;
+    height: 25px;
+    box-shadow: 0px 0px 9px rgba(255, 255, 255, 0.685);
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #000;
+    outline: none;
+}
+
+/* Footer - Newsletter Checkbox */
+.container .os-Footer .news li .gender-Newsletter {
+    all: unset;
+    display: inline-block;
+    border: 2px solid #BBB;
+    width: 15px;
+    height: 15px;
+}
+
+/* Footer - Newsletter Checkbox / Checked */
+.container .os-Footer .news li .gender-Newsletter:checked {
+    background: #000;
+    outline: none;
+}
+
+/* Footer - Newsletter Button */
+.container .os-Footer .news li .btnRegisterNews {
+    margin-top: 5px;
+    background: #000;
+    border: none;
+    width: 100px;
+    height: 28px;
+    padding-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFF;
+    transition: 0.35s;
+}
+
+/* Footer - Newsletter Button Animation */
+.container .os-Footer .news li input[type="submit"]:hover {
+    background: #FFF;
+    border: 1px solid #000;
+    color: #000;
+}
+
+/* Footer - Copyright */
+.container .os-Footer .os-Copyright {
+    width: 100%;
+    height: 40px;
+    background: #F5F5F5;
+}
+
+/* Footer - Text Copyright */
+.container .os-Footer .os-Copyright .copyright {
+    margin-top: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #999;
+}
+
+.container .os-Footer .os-Developer {
+    width: 100%;
+    height: 35px;
+    background: #FFF;
+}
+
+.container .os-Footer .os-Developer .developer,a {
+    position: relative;
+    top: 2px;
+    font-family: 'Pacifico', cursive;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+}
+
+/* Modal */
+.modal {
+    display: block;
+    opacity: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 90%;
+    height: auto;
+    padding: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.685);
+    overflow: hidden;
+    z-index: 999;
+}
+
+/* Modal Header */
+.modal .modal-header {
+    padding: 0px;
+    height: 15px;
+}
+
+/* Modal Header Text */
+.modal .modal-header #close-modal {
+    float: right;
+    margin-top: 0px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Modal Body Text */
+.modal .modal-body p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+}
+
+/* Modal Body Welcome Text */
+.modal .modal-body #welcome {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Modal Body Input Text */
+.modal .modal-body input[type="text"] {
+    margin-top: 30px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 27px;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #000;
+    box-shadow: 0px 0px 9px rgba(255, 255, 255, 0.685);
+}
+
+/* Modal Body Cupom */
+.modal .modal-body #cupom {
+    position: relative;
+    top: -22px;
+}
+
+/* Modal Body Input Buttun */
+.modal .modal-body button {
+    margin-top: 15px;
+    padding: 5px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 35px;
+    background: none;
+    border: 1px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* Modal Body Input Button Animation */
+.modal .modal-body button:hover {
+    background: #000;
+    color: #FFF;
+}
+
+/* Intern Formatation Input Text */
+::-webkit-input-placeholder {
+    margin-left: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    color: #555;
+}
